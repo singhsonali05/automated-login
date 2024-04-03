@@ -104,13 +104,7 @@ public class FormExample extends JFrame implements Runnable{
         System.out.println("URL: " + url + ", Username: " + username + ", Password: " + password);
         new FormSubmitter(url, username, password).run();
 
-//        Thread t1 = new Thread(new FormSubmitter(url, username, password));
-//        Thread t2 = new Thread(new FormSubmitter(url, username, password));
-//        Thread t3 = new Thread(new FormSubmitter(url, username, password));
-//
-//        t1.start();
-//        t2.start();
-//        t3.start();
+
     }
 
     private static class FormSubmitter implements Runnable {
